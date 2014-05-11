@@ -1,5 +1,9 @@
 ##script for making plot 2
 
+#download and unzip data
+download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", "exdata-data-household_power_consumption.zip", method="curl")
+unzip("exdata-data-household_power_consumption.zip")
+
 #read data from file in the working directory
 c = read.table("household_power_consumption.txt", header=TRUE, sep=";", na.strings="?")
 
